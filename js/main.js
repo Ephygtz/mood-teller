@@ -6,9 +6,10 @@ function showMood(){
 		alert("Please feel in all fields");
 		return false;
 	}
+  var face = "";
 
 	if (mood == "happy") {
-		var face = " :) ";
+		face = " :) ";
 	} else if (mood == "sad") {
 		face = " :( ";
 	}else {
@@ -19,7 +20,7 @@ function showMood(){
 
 	var holder = document.getElementById("holder");
 	holder.innerHTML = moodString;
-};
+}
 
 function clearMood () {
 	document.getElementById("moodForm").reset();
